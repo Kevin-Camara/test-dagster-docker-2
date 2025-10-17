@@ -8,7 +8,7 @@ def my_asset():
 def my_job():
     my_asset()
 
-@schedule(job=my_job, cron_schedule="0 0 * * *")
+@schedule(job=my_job, cron_schedule="*/5 * * * *")
 def my_schedule():
     return {}
 
