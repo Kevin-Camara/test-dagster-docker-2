@@ -2,6 +2,7 @@ from dagster import Definitions, asset, job, schedule
 
 @asset
 def my_asset():
+    """Add docstring an my first asset"""
     return "Hello from new project"
 
 @job
